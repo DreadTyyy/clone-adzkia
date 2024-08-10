@@ -51,10 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
       };
     
       const startAutoChange = () => {
-        console.log('luar interval');
         setInterval(() => {
           const index = checkIndex();
-          console.log('interval');
           const nextIndex = index === listHeader.length - 1 ? 0 : index + 1;
           changeImage(nextIndex);
         }, 5000); // Change image every 3 seconds
