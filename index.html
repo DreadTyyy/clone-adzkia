@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="Deskripsi singkat mengenai website ini">
+
+    <!-- Icon website -->
+    <link rel="shortcut icon" href="assets/logo adzkia.jpg" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="style/main.css">
+
+    <!-- Font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" />
+</head>
+<body class="_poppins-regular">
+    <div class="_overlay"></div>
+    <div id="link-bottom" class="fixed flex items-center gap-2 bottom-2 right-2 z-[999999]">
+        <a href="#">
+            <img src="assets/pmb-adz.png" alt="Pendaftaran Mahasiswa Baru"
+                class="h-[48px] w-auto object-cover"
+            >
+        </a>
+        <a href="#">
+            <img src="assets/wa.png" alt="Contact Whatsapp"
+                class="h-[48px] w-auto object-cover"
+            >
+        </a>
+    </div>
+    <div class="md:flex hidden justify-between items-center w-full h-[40px] px-24">
+        <div class="_poppins-medium flex justify-center gap-6 text-[12px]">
+            <a href="#">
+                <i class="fa-brands fa-whatsapp"></i>
+                6285265280997
+            </a>
+            <a href="#">
+                <i class="fa-regular fa-envelope"></i>
+                informasi@adzkia.ac.id            
+            </a>
+        </div>
+        <div>
+            <a href="#" class="px-2 py-2 h-full hover:bg-gray-500 transition-all duration-300">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="#" class="px-2 py-2 h-full hover:bg-purple-500 transition-all duration-300">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="px-2 py-2 h-full hover:bg-primary-500 transition-all duration-300">
+                <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a href="#" class="px-2 py-2 h-full hover:bg-danger transition-all duration-300"> 
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+    <nav id="navigation" class="sticky md:px-24 px-8 md:py-0 py-4 top-0 left-0 flex justify-between md:items-center items-start h-[70px] w-full z-[9999] bg-primary md:overflow-visible overflow-hidden">
+        <a href="#"><img src="assets/logo.png" alt="Logo Adzkia"></a>
+        <div id="hamburger" class="flex md:hidden">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </div>
+        <ul class="absolute md:static md:py-0 py-8 flex md:flex-row flex-col text-white font-semibold md:w-fit w-full justify-center gap-2 gap-y-6 md:text-[12px] text-sm top-[108px] left-4">
+            <li>
+                <a href="#" class="uppercase py-5 px-2 hover:text-gray-200">Beranda</a>
+            </li>
+            <li class="relative group">
+                <a href="#" class="_dropdowns-mobile uppercase py-5 px-2 hover:text-gray-200">
+                    Profil
+                    <i class="fa-solid fa-chevron-down _mobile-view"></i>
+                </a>
+                <ul class="_menu-dropdown absolute group-hover:block block md:hidden w-fit min-w-[280px] top-[35px] p-2 bg-primary border border-primary-500 rounded-md shadow-lg">
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">Profil Universitas Adzika</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">Visi dan Misi</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">Akreditasi</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">Struktur Organisasi</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">Survey Kepuasan Layanan</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="relative group">
+                <a href="#" class="_dropdowns-mobile uppercase py-5 px-2 hover:text-gray-200">
+                    Akademik
+                    <i class="fa-solid fa-chevron-down _mobile-view"></i>
+                </a>
+                <ul class=" _menu-dropdown absolute group-hover:block block md:hidden w-fit min-w-[280px] top-[35px] p-2 bg-primary border border-primary-500 rounded-md shadow-lg">
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">SPMB</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">Buku Panduan Akademik</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="relative group">
+                <a href="#" class="_dropdowns-mobile uppercase py-5 px-2 hover:text-gray-200">
+                    Publikasi
+                    <i class="fa-solid fa-chevron-down _mobile-view"></i>
+                </a>
+                <ul class="_menu-dropdown absolute group-hover:block block md:hidden w-fit min-w-[280px] top-[35px] p-2 bg-primary border border-primary-500 rounded-md shadow-lg">
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">Penelitian</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">Pengabdian</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">Buku</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">HAKI</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="uppercase py-5 px-2 hover:text-gray-200">Fasilitas</a>
+            </li>
+            <li>
+                <a href="#" class="uppercase py-5 px-2 hover:text-gray-200">Berita</a>
+            </li>
+            <li class="relative group">
+                <a href="#" class="_dropdowns-mobile uppercase py-5 px-2 hover:text-gray-200">
+                    Program Studi
+                    <i class="fa-solid fa-chevron-down _mobile-view"></i>
+                </a>
+                <ul class="_menu-dropdown absolute group-hover:block block md:hidden w-fit min-w-[280px] top-[35px] p-2 bg-primary border border-primary-500 rounded-md shadow-lg">
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">S2 Pendidikan Dasar</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">Pendidikan Guru Sekolah Dasar (PGSD)</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">Pendidikan Guru Pendidikan Anak Usia Dini (PGPAUD)</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">Pendidikan Bahasa Indonesia (PBI)</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">Pendidikan Fisika</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">Pendidikan Matematika</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">Pendidikan Khusus</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">Pendidikan Profesi Guru (PPG)</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">Teknik Industri</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">Sistem Informasi</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">Informatika</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">Kewirausahaan</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">Agribisnis</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">Manajemen Ritel</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">Gizi</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">Hukum Bisnis</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">Teknik Sipil</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="relative group">
+                <a href="#" class="_dropdowns-mobile uppercase py-5 px-2 hover:text-gray-200">Kemahasiswaan</a>
+                <ul class="_menu-dropdown absolute group-hover:block block md:hidden w-fit min-w-[280px] top-[35px] p-2 bg-primary border border-primary-500 rounded-md shadow-lg">
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">Kalender Akademik</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">Jadwal Kuliah</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">Organisasi Mahasiswa</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">Tracer Study</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="uppercase py-5 px-2 hover:text-gray-200">Kontak</a>
+            </li>
+            <li class="relative group">
+                <a href="#" class="_dropdowns-mobile uppercase py-5 px-2 hover:text-gray-200">
+                    <i class="fa-solid fa-earth-americas"></i>
+                    <i class="fa-solid fa-chevron-down _mobile-view"></i>
+                </a>
+                <ul class="_menu-dropdown absolute group-hover:block block md:hidden w-fit min-w-[280px] top-[35px] right-0 p-2 bg-primary border border-primary-500 rounded-md shadow-lg">
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">Bahasa Indonesia</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:text-gray-200 whitespace-nowrap">English</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <div class="w-full md:h-[350px] h-[120px]">
+            <img 
+                class="object-fill w-full h-full transition-all duration-500" 
+                src="assets/Slider_Adzkia-rev11_(1).png" 
+                alt="Slider Image"
+                id="image-header"
+                title="slider image">
+        </div>
+        <div class="relative w-full h-[40px] bg-secondary overflow-hidden z-0">
+            <p class="_poppins-bold _move-text whitespace-nowrap w-full absolute top-1/2 -translate-y-1/2 left-full text-white md:text-[14px] text-[12px]">
+                TELAH DIBUKA PENDAFTARAN MAHASISWA BARU UNIVERSITAS ADZKIA TA. 2024/2025 :: TELAH DIBUKA PROGRAM EVERYONE CAN STUDI "JALUR SPIRIT SARJANA"
+            </p>
+        </div>
+    </header>
+    <section id="profile" class="md:px-24 px-4 py-16 grid md:grid-cols-3 grid-cols-1 w-full gap-8 items-start">
+        <div class="w-full h-full flex justify-end items-end">
+            <img src="assets/REKTOR_UA.png" alt="Foto Rektor UA" height="360" class="object-cover h-[360px]">
+        </div>
+        <article class="w-full flex flex-col justify-center">
+            <h2 class="_poppins-medium leading-8 text-primary text-2xl">Selamat Datang di Universitas Adzkia Padang</h2>
+            <div class="mt-8 my-12 h-[1px] w-20 bg-gradient-to-r from-[#f5a425] to-[#a12c2f] self-center"></div>
+            <p class="leading-6 text-base text-justify">
+                Universitas Adzkia Padang adalah hasil konversi STKIP Adzkia Padang menjadi Universitas yang pada mulanya bernama Sekolah Tinggi Keguruan dan Ilmu Pendidikan (STKIP) Adzkia. Universitas Adzkia Padang terdiri dari 16 Program Studi. Kampus Universitas Adzkia terletak di Jl. Raya Taratak Paneh No.7 Korong Gadang, Kalumbuk, Kec. Kuranji Kota Padang. Universitas Adzkia terakreditasi Institusi dari BAN-PT.
+            </p>
+        </article>
+        <article class="w-full flex flex-col justify-center">
+            <h2 class="_poppins-medium leading-8 text-primary text-2xl">Video Profile Universitas Adzkia</h2>
+            <div class="mt-8 my-12 h-[1px] w-20 bg-gradient-to-r from-[#f5a425] to-[#a12c2f] self-center"></div>
+            <figure class="group relative h-full w-full overflow-hidden">
+                <img 
+                    src="https://img.youtube.com/vi/8MwkaRP6Iho/hqdefault.jpg" 
+                    alt="Cover Video Profil UA"
+                    class="group-hover:scale-110 group-hover:brightness-50 transition-all duration-300"
+                    >
+                <figcaption class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                    <button 
+                        data-link="https://www.youtube.com/watch?v=8MwkaRP6Iho" 
+                        onclick="openPreview(this.getAttribute('data-link'))"
+                        title="Video Profil UA"
+                        class="w-8 h-8 bg-primary rounded-full text-gray-900 flex justify-center items-center"
+                        >
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </figcaption>
+            </figure>
+        </article>
+    </section>
+    <section id="news" class="md:px-24 px-4 py-16 grid lg:grid-cols-3 grid-cols-1 w-full gap-8 items-start bg-my-gray">
+        <main class="w-full col-span-2 flex flex-col justify-center">
+            <h2 class="_poppins-medium leading-8 text-primary text-3xl self-center">Berita</h2>
+            <div class="mt-8 my-12 h-[1px] w-20 bg-gradient-to-r from-[#f5a425] to-[#a12c2f] self-center"></div>
+            <div class="flex flex-col gap-8">
+                <article class="bg-white w-full h-[240px] shadow-md"></article>
+                <article class="flex flex-col md:flex-row justify-between bg-white w-full h-full md:h-[240px] shadow-md gap-14">
+                    <div class="h-full w-full overflow-hidden">
+                        <a href="#">
+                            <img 
+                                loading="lazy"
+                                src="assets/berita-1.png" 
+                                alt="Cover berita KERJASAMA UNIVESITAS ADZKIA DENGAN INTI INTERNATIONAL UNIVERSITY MALAYSIA"
+                                class="object-cover h-full scale-125 hover:scale-100 transition-all duration-500"
+                                >
+                        </a>
+                    </div>
+                    <div class="px-4 py-2 w-fit">
+                        <h3 class="_poppins-medium text-lg text-primary-500 leading-6 hover:text-primary transition-all duration-300">
+                            <a href="#">
+                                KERJASAMA UNIVESITAS ADZKIA DENGAN INTI INTERNATIONAL UNIVERSITY MALAYSIA
+                            </a>
+                        </h3>
+                        <p class="mt-4 leading-6 text-sm text-gray-500 ">
+                            NILAI, Universitas Adzkia resmi bekerjasama dengan INTI International University, Nilai Malaysa pada hari selasa, 23 Juli 2024, di kampus INTI Interna ...
+                        </p>
+                    </div>
+                </article>
+                <article class="flex flex-col md:flex-row justify-between bg-white w-full h-full md:h-[240px] shadow-md gap-14">
+                    <div class="h-full w-full overflow-hidden">
+                        <a href="#">
+                            <img 
+                                loading="lazy"
+                                src="assets/berita-2.png" 
+                                alt="Cover berita WEBINAR PRODI PGSD UNIVERSITAS ADZKIA: MENGUATKAN PENDIDIKAN KARAKTER BERBASIS KEARIFAN LOKAL"
+                                class="object-cover h-full scale-125 hover:scale-100 transition-all duration-500"
+                                >
+                        </a>
+                    </div>
+                    <div class="px-4 py-2 w-fit">
+                        <h3 class="_poppins-medium text-lg text-primary-500 leading-6 hover:text-primary transition-all duration-300">
+                            <a href="#">
+                                WEBINAR PRODI PGSD UNIVERSITAS ADZKIA: MENGUATKAN PENDIDIKAN KARAKTER BERBASIS KEARIFAN LOKAL
+                            </a>
+                        </h3>
+                        <p class="mt-4 leading-6 text-sm text-gray-500 ">
+                            Padang,  20 Juli 2024, Webinar bertema "Pendidikan Karakter Berbasis Kearifan Lokal" yang diselenggarakan oleh Prodi PGSD Dalam upaya memperkuat pend ...
+                        </p>
+                    </div>
+                </article>
+                <article class="flex flex-col md:flex-row justify-between bg-white w-full h-full md:h-[240px] shadow-md gap-14">
+                    <div class="h-full w-full overflow-hidden">
+                        <a href="#">
+                            <img 
+                                loading="lazy"
+                                src="assets/berita-3.png" 
+                                alt="Cover berita UNIVERSITAS ADZKIA GELAR RAPAT KERJA TAHUN ANGGARAN 2024/2025"
+                                class="object-cover h-full scale-125 hover:scale-100 transition-all duration-500"
+                                >
+                        </a>
+                    </div>
+                    <div class="px-4 py-2 w-fit">
+                        <h3 class="_poppins-medium text-lg text-primary-500 leading-6 hover:text-primary transition-all duration-300">
+                            <a href="#">
+                                UNIVERSITAS ADZKIA GELAR RAPAT KERJA TAHUN ANGGARAN 2024/2025
+                            </a>
+                        </h3>
+                        <p class="mt-4 leading-6 text-sm text-gray-500 ">
+                            Padang, 16 Juli 2024 – Universitas Adzkia menyelenggarakan Rapat Kerja (Raker) untuk tahun anggaran 2024/2025 pada tanggal 15-16 Juli 2024 di Ruang ...
+                        </p>
+                    </div>
+                </article>
+            </div>
+            <a href="#" class="mt-8 px-4 py-2 bg-primary-700 text-white text-[12px] w-fit rounded-md self-center hover:bg-primary-900 transition-all duration-300">
+                SELENGKAPNYA
+            </a>
+        </main>
+        <aside class="w-full col-span-1 flex flex-col justify-center">
+            <h2 class="_poppins-medium leading-8 text-primary text-3xl self-center">Pengumuman</h2>
+            <div class="mt-8 my-12 h-[1px] w-20 bg-gradient-to-r from-[#f5a425] to-[#a12c2f] self-center"></div>
+            <div class="flex flex-col gap-8">
+                <article class="px-6 py-4 flex flex-col justify-end items-center bg-white w-full h-[240px] shadow-md gap-4">
+                    <a href="#" class="w-full h-32 flex justify-center">
+                        <div class="block w-fit">
+                            <img loading="lazy" src="assets/cover-pengumuman-1.png" alt="Cover pengumuman Open Recruitment Dosen Desain Komunikasi Visual" class="object-cover h-32">
+                        </div>    
+                    </a>
+                    <h4 class="_poppins-medium w-full leading-6 text-sm text-primary-500 hover:text-primary transition-all duration-300">
+                        <a href="#">
+                            Open Recruitment Dosen Desain Komunikasi Visual (DKV)
+                        </a>
+                    </h4>
+                </article>
+                <article class="px-6 py-4 flex flex-col justify-end items-center bg-white w-full h-[240px] shadow-md gap-4">
+                    <a href="#" class="w-full h-32 flex justify-center">
+                        <div class="block w-fit">
+                            <img loading="lazy" src="assets/logo adzkia.jpg" alt="Cover pengumuman Pengumuman Pendaftaran Skripsi" class="object-cover h-32">
+                        </div>    
+                    </a>
+                    <h4 class="_poppins-medium w-full leading-6 text-sm text-primary-500 hover:text-primary transition-all duration-300">
+                        <a href="#">
+                            Pengumuman Pendaftaran Skripsi
+                        </a>
+                    </h4>
+                </article>
+                <article class="px-6 py-4 flex flex-col justify-end items-center bg-white w-full h-[240px] shadow-md gap-4">
+                    <a href="#" class="w-full h-32 flex justify-center">
+                        <div class="block w-fit">
+                            <img loading="lazy" src="assets/logo adzkia.jpg" alt="Cover pengumuman Registrasi dan Tanggal Penting Ganjil 2023-2024" class="object-cover h-32">
+                        </div>    
+                    </a>
+                    <h4 class="_poppins-medium w-full leading-6 text-sm text-primary-500 hover:text-primary transition-all duration-300">
+                        <a href="#">
+                            Registrasi dan Tanggal Penting Ganjil 2023-2024
+                        </a>
+                    </h4>
+                </article>
+                <article class="px-6 py-4 flex flex-col justify-end items-center bg-white w-full h-[240px] shadow-md gap-4">
+                    <a href="#" class="w-full h-32 flex justify-center">
+                        <div class="block w-fit">
+                            <img loading="lazy" src="assets/cover-pengumuman-penerimaan-s2.jpg" alt="Cover pengumuman Penerimaan Mahasiswa S2 Pendidikan Dasar Universitas Adzkia 2023" class="object-cover h-32">
+                        </div>    
+                    </a>
+                    <h4 class="_poppins-medium w-full leading-6 text-sm text-primary-500 hover:text-primary transition-all duration-300">
+                        <a href="#">
+                            Penerimaan Mahasiswa S2 Pendidikan Dasar Universitas Adzkia 2023
+                        </a>
+                    </h4>
+                </article>
+            </div>
+            <a href="#" class="mt-8 px-4 py-2 bg-primary-700 text-white text-[12px] w-fit rounded-md self-center hover:bg-primary-900 transition-all duration-300">
+                SELENGKAPNYA
+            </a>
+        </aside>
+    </section>
+    <section id="activities" class="md:px-24 px-4 py-16 grid md:grid-cols-3 grid-cols-1 w-full gap-8 items-start bg-my-gray">
+        <main class="w-full col-span-2 flex flex-col justify-center">
+            <h2 class="_poppins-medium leading-8 text-primary text-3xl self-center">Agenda</h2>
+            <div class="mt-8 my-12 h-[1px] w-20 bg-gradient-to-r from-[#f5a425] to-[#a12c2f] self-center"></div>
+            <div class="flex flex-col md:flex-row gap-8">
+                <article class="relative group flex justify-between bg-white w-full md:w-1/2 h-[240px] shadow-md gap-14 overflow-hidden">
+                    <a href="#" class="block absolute w-full h-full bg-gradient-to-t from-[rgba(0,0,0,0.8)] to-[rgba(0,0,0,0.2)] top-0 left-0 z-[9]"></a>
+                    <div class="w-full h-full flex justify-center z-0">
+                        <div class="block w-fit">
+                            <img 
+                            loading="lazy"
+                            src="assets/agenda-1.png" 
+                            alt="Cover agenda [KULIAH UMUM | PERAN AKTIF GEN Z DALAM MEWUJUDKAN BUDAYA ANTI KORUPSI DI INDONESIA]"
+                            class="object-cover h-full scale-125 group-hover:scale-100 transition-all duration-500"
+                            >
+                        </div>    
+                    </div>
+                    <div class="absolute bottom-1 text-center px-8 py-2 w-fit z-[99]">
+                        <h3 class="_poppins-medium text-lg text-white leading-6 group-hover:-translate-y-4 transition-all duration-300">
+                            <a href="#">
+                                [KULIAH UMUM | PERAN AKTIF GEN Z DALAM MEWUJUDKAN BUDAYA ANTI KORUPSI DI INDONESIA]
+                            </a>
+                        </h3>
+                    </div>
+                </article>
+                <article class="relative group flex justify-between bg-white w-full md:w-1/2 h-[240px] shadow-md gap-14 overflow-hidden">
+                    <a href="#" class="block absolute w-full h-full bg-gradient-to-t from-[rgba(0,0,0,0.8)] to-[rgba(0,0,0,0.2)] top-0 left-0 z-[9]"></a>
+                    <div class="w-full h-full flex justify-center z-0">
+                        <div class="block w-fit">
+                            <img 
+                            loading="lazy"
+                            src="assets/agenda-2.png" 
+                            alt="Cover agenda BARAKALLAH KEPADA KA. PRODI PENDIDIKAN KHUSUS DAN TIM SEBAGAI PENERIMA PROGRAM BANTUAN PEMBENTUKAN DAN PENGUATAN UNIT LAYANAN DISABILITAS KEMENDIKBUDRISTEK TAHUN 2024"
+                            class="object-cover h-full scale-125 group-hover:scale-100 transition-all duration-500"
+                            >
+                        </div>    
+                    </div>
+                    <div class="absolute bottom-1 text-center px-8 py-2 w-fit z-[99]">
+                        <h3 class="_poppins-medium text-lg text-white leading-6 group-hover:-translate-y-4 transition-all duration-300">
+                            <a href="#">
+                                BARAKALLAH KEPADA KA. PRODI PENDIDIKAN KHUSUS DAN TIM SEBAGAI PENERIMA PROGRAM BANTUAN PEMBENTUKAN DAN PENGUATAN UNIT LAYANAN DISABILITAS KEMENDIKBUDRISTEK TAHUN 2024
+                            </a>
+                        </h3>
+                    </div>
+                </article>
+            </div>
+            <a href="#" class="mt-8 px-4 py-2 bg-primary-700 text-white text-[12px] w-fit rounded-md self-center hover:bg-primary-900 transition-all duration-300">
+                SELENGKAPNYA
+            </a>
+        </main>
+        <aside class="w-full col-span-1 flex flex-col justify-center">
+            <h2 class="_poppins-medium leading-8 text-primary text-3xl self-center">Artikel</h2>
+            <div class="mt-8 my-12 h-[1px] w-20 bg-gradient-to-r from-[#f5a425] to-[#a12c2f] self-center"></div>
+            <div class="flex flex-col gap-8">
+                <article class="px-6 py-4 flex flex-col justify-end items-center w-full h-[240px] gap-4"></article>
+            </div>
+            <a href="#" class="mt-8 px-4 py-2 bg-primary-700 text-white text-[12px] w-fit rounded-md self-center hover:bg-primary-900 transition-all duration-300">
+                SELENGKAPNYA
+            </a>
+        </aside>
+    </section>
+    <section id="videos" class="md:px-24 px-4 py-16 w-full flex flex-col justify-center">
+        <h2 class="_poppins-medium leading-8 text-primary text-3xl self-center">Video</h2>
+        <div class="mt-8 my-12 h-[1px] w-20 bg-gradient-to-r from-[#f5a425] to-[#a12c2f] self-center"></div>
+        <div class="grid md:grid-cols-4 grid-cols-1 w-full gap-8 items-start">
+            <figure class="group relative h-[320px] w-full overflow-hidden">
+                <img 
+                    src="https://img.youtube.com/vi//hqdefault.jpg" 
+                    alt="Cover Video"
+                    class="object-cover h-full w-full group-hover:scale-110 group-hover:brightness-50 transition-all duration-300"
+                    >
+                <figcaption class="p-2 absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-[30%] flex justify-center items-center flex-col gap-4 opacity-0 group-hover:-translate-y-[50%] group-hover:opacity-100 transition-all duration-500">
+                    <button 
+                        onclick="openPreview(this.getAttribute('data-link'))"    
+                        data-link="https://www.youtube.com/watch?v=2JVAiXAZv-0&ab_channel=UNIVERSITASADZKIA" 
+                        title="Kejadian tak terduga!!! Terlihat penampakan sesaat"
+                        class="w-8 h-8 bg-primary rounded-full text-gray-900 flex justify-center items-center"
+                        >
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <p class="_poppins-bold text-sm uppercase w-full text-center">
+                        Kejadian tak terduga!!! Terlihat penampakan sesaat
+                    </p>
+                </figcaption>
+            </figure>
+            <figure class="group relative h-[320px] w-full overflow-hidden">
+                <img 
+                    src="https://img.youtube.com/vi/2JVAiXAZv-0&ab_channel=UNIVERSITASADZKIA/hqdefault.jpg" 
+                    alt="Cover Video"
+                    class="object-cover h-full w-full group-hover:scale-110 group-hover:brightness-50 transition-all duration-300"
+                    >
+                <figcaption class="p-2 absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-[30%] flex justify-center items-center flex-col gap-4 opacity-0 group-hover:-translate-y-[50%] group-hover:opacity-100 transition-all duration-500">
+                    <button 
+                        onclick="openPreview(this.getAttribute('data-link'))"    
+                        data-link="https://www.youtube.com/watch?v=2JVAiXAZv-0&ab_channel=UNIVERSITASADZKIA" 
+                        title="Wisuda Universitas Adzkia"
+                        class="w-8 h-8 bg-primary rounded-full text-gray-900 flex justify-center items-center"
+                        >
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <p class="_poppins-bold text-sm uppercase w-full text-center">
+                        Wisuda Universitas Adzkia
+                    </p>
+                </figcaption>
+            </figure>
+            <figure class="group relative h-[320px] w-full overflow-hidden">
+                <img 
+                    src="https://img.youtube.com/vi/NR4OeLw2IZ4/hqdefault.jpg" 
+                    alt="Cover Video"
+                    class="object-fill h-full w-full group-hover:scale-110 group-hover:brightness-50 transition-all duration-300"
+                    >
+                <figcaption class="p-2 absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-[30%] flex justify-center items-center flex-col gap-4 opacity-0 group-hover:-translate-y-[50%] group-hover:opacity-100 transition-all duration-500">
+                    <button 
+                        onclick="openPreview(this.getAttribute('data-link'))"    
+                        data-link="https://www.youtube.com/watch?v=NR4OeLw2IZ4" 
+                        title="Launching Universitas Adzkia"
+                        class="w-8 h-8 bg-primary rounded-full text-gray-900 flex justify-center items-center"
+                        >
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <p class="_poppins-bold text-sm uppercase w-full text-center">
+                        Launching Universitas Adzkia
+                    </p>
+                </figcaption>
+            </figure>
+            <figure class="group relative h-[320px] w-full overflow-hidden">
+                <img 
+                    src="https://img.youtube.com/vi/TQVpqGELD-Q/hqdefault.jpg" 
+                    alt="Cover Video Profil UA"
+                    class="object-fill h-full w-full group-hover:scale-110 group-hover:brightness-50 transition-all duration-300"
+                    >
+                <figcaption class="p-2 absolute w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-[30%] flex justify-center items-center flex-col gap-4 opacity-0 group-hover:-translate-y-[50%] group-hover:opacity-100 transition-all duration-500">
+                    <button 
+                        onclick="openPreview(this.getAttribute('data-link'))"    
+                        data-link="https://www.youtube.com/watch?v=TQVpqGELD-Q" 
+                        title="Mars Universitas Adzkia"
+                        class="w-8 h-8 bg-primary rounded-full text-gray-900 flex justify-center items-center"
+                        >
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <p class="_poppins-bold text-sm uppercase w-full text-center">
+                        Mars Universitas Adzkia
+                    </p>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+    <footer class="md:px-24 px-4 py-16 grid md:grid-cols-3 grid-cols-1 w-full gap-8 items-start bg-primary">
+        <div class="w-full">
+            <a href="#"><img class="h-10" src="assets/logo.png" alt="Logo Adzkia"></a>
+            <p class="text-white text-sm leading-5 text-justify">
+                Ketentuan Akademik adalah ketentuan-ketentuan yang di selenggarakan atau digunakan oleh Universitas Adzkia dalam menjalankan pelaksanaan proses penguasaan ilmu pengetahuan, teknologi, dan/atau kesehatan serta pengembangannya, yang sifatnya mengikat seluruh unsur civitas akademika.
+            </p>
+        </div>
+        <div class="w-full">
+            <h5 class="_poppins-bold text-white">
+                SUPPORT
+            </h5>
+            <div class="h-[1px] w-full bg-white opacity-30 my-2"></div>
+            <ol class="text-sm text-white flex flex-col gap-1">
+                <li>
+                    <i class="fa-solid fa-chevron-right text-[10px] mr-1"></i>
+                    <a href="#" class="hover:text-danger transition-all duration-300">SPMB S1 Universitas Adzkia</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-chevron-right text-[10px] mr-1"></i>
+                    <a href="#" class="hover:text-danger transition-all duration-300">SPMB S2 Universitas Adzkia</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-chevron-right text-[10px] mr-1"></i>
+                    <a href="#" class="hover:text-danger transition-all duration-300">Wirausaha Kampus</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-chevron-right text-[10px] mr-1"></i>
+                    <a href="#" class="hover:text-danger transition-all duration-300">E-Jurnal</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-chevron-right text-[10px] mr-1"></i>
+                    <a href="#" class="hover:text-danger transition-all duration-300">Repository</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-chevron-right text-[10px] mr-1"></i>
+                    <a href="#" class="hover:text-danger transition-all duration-300">Portal Smart Campus</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-chevron-right text-[10px] mr-1"></i>
+                    <a href="#" class="hover:text-danger transition-all duration-300">E-Perpus</a>
+                </li>
+            </ol>
+        </div>
+        <div class="w-full">
+            <h5 class="_poppins-bold text-white">
+                UNIVERSITY ADDRESS
+            </h5>
+            <div class="h-[1px] w-full bg-white opacity-30 my-2"></div>
+            <ol class="text-sm text-white flex flex-col gap-1">
+                <li>
+                    <i class="fa-solid fa-location-dot text-[14px] mr-1"></i>
+                    <a href="#" class="hover:text-danger transition-all duration-300">
+                        Jl. Raya Taratak Paneh No.7 Korong Gadang, Kalumbuk, Kec. Kuranji Kota Padang, Sumatera Barat
+                    </a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone text-[14px] mr-1"></i>
+                    <a href="#" class="hover:text-danger transition-all duration-300">(0751) 497 107</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope text-[14px] mr-1"></i>
+                    <a href="#" class="hover:text-danger transition-all duration-300">informasi@adzkia.ac.id</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-instagram text-[14px] mr-1"></i>
+                    <a href="#" class="hover:text-danger transition-all duration-300">universitasadzkia</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-square-facebook text-[14px] mr-1"></i>
+                    <a href="#" class="hover:text-danger transition-all duration-300">UNIVADZKIA</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-youtube text-[14px] mr-1"></i>
+                    <a href="#" class="hover:text-danger transition-all duration-300">Universitas Adzkia</a>
+                </li>
+            </ol>
+        </div>
+    </footer>
+    <div class="p-4 bg-gray-800 text-white w-full h-[70px] text-sm text-center">
+        <p>
+            Developed by 
+            <a href="#" class="_poppins-bold">
+                Smart Campus
+            </a> 
+            Copyright 2024 
+            <a href="#" class="_poppins-bold">
+                Universitas Adzkia
+            </a>
+        </p>
+    </div>
+    <div 
+        id="preview-container"
+        class="w-[320px] h-[240px] md:w-[560px] md:h-[320px] lg:w-[800px] lg:h-[450px]  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex-col justify-end items-end z-[999999]"
+        >
+        <button onclick="closePreview()">
+            <i class="fa-solid fa-xmark text-3xl text-gray-400 mb-2"></i>
+        </button>
+        <iframe 
+            id="frame-youtube"
+            class="w-full h-full"
+            src
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen></iframe>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body:has(._overlay.open) {
+    overflow: hidden;
+}
+
+#navigation.active {
+    position: absolute;
+    height: 100vh;
+    background-color: #181818;
+    overflow-y: auto;
+}
+
+#hamburger {
+    margin: 1rem 0;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.hamburger-line {
+    height: 2px;
+    width: 20px;
+    border-radius: 999px;
+    background-color: #fff;
+    transition: all 300ms ease-in;
+}
+#hamburger.active .hamburger-line:nth-child(1) {
+    transform: rotate(-45deg) translate(2px);
+    transform-origin: right;
+}
+#hamburger.active .hamburger-line:nth-child(2) {
+    transform: scale(0);
+}
+#hamburger.active .hamburger-line:nth-child(3) {
+    transform: rotate(45deg) translate(2px);
+    transform-origin: right;
+}
+
+._overlay.open {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    opacity: 0.9;
+    overflow: hidden;
+    z-index: 99999;
+}
+
+._move-text {
+    animation: movingText 40s 300ms linear infinite;
+}
+
+@keyframes movingText {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+#preview-container {
+    display: none;
+}
+
+#preview-container.show {
+    display: flex;
+}
+
+._mobile-view {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    ._mobile-view {
+        display: block !important;
+    }
+
+    #navigation {
+        position: absolute;
+        transition: all 300ms ease-in;
+    }
+    ._dropdowns-mobile {
+        display: flex;
+        width: 90%;
+        padding-top: 0;
+        padding-bottom: 0;
+        justify-content: space-between;
+    }
+    ._dropdowns-mobile ~ ._menu-dropdown {
+        position: static !important;
+        padding: 0 !important;
+        border: none;
+        border-radius: 0;
+        max-height: 0;
+        width: 90%;
+        overflow: hidden;
+    }
+    ._dropdowns-mobile.active ~ ._menu-dropdown {
+        max-height: 100vh;
+        border: 1px;
+        margin-top: 0.5rem;
+        width: 90%;
+        padding: 8px;
+    }
+    ._menu-dropdown {
+        transition: all 300ms ease-in;
+    }
+    ._move-text {
+        animation-duration: 16s;
+    }
+}
+
+/* Format poppins */
+
+._poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+  
+._poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+._poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+  
+._poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+  
+._poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
